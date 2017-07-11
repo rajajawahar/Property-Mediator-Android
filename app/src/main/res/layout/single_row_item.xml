@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+     	android:background="@drawable/background1">
+
+ <TextView
+     android:id="@+id/tv_person_name"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:paddingBottom="5dp"
+     android:text="Name:"
+     android:textSize="15sp"
+     	android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_person_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:paddingBottom="5dp"
+        android:text="Phone:"
+        android:textSize="15sp" 
+        	android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/getname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tv_person_pin"
+        android:text="TextView" 
+        	android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/getphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_person_pin"
+        android:layout_alignBottom="@+id/tv_person_pin"
+        android:layout_alignLeft="@+id/getname"
+        android:text="TextView" 
+        	android:textColor="#ffffff"/>
+
+</RelativeLayout>

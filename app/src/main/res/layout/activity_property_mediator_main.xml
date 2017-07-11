@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background1" >
+
+        <ImageButton
+            android:id="@+id/imgphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/photo" />
+
+        <TextView
+            android:id="@+id/txtphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/imgphoto"
+            android:layout_below="@+id/imgphoto"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="15dp"
+            android:text="Add Photo"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/imgclient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtphoto"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="21dp"
+            android:src="@drawable/clients" />
+
+        <TextView
+            android:id="@+id/txtcllient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtphoto"
+            android:layout_alignBottom="@+id/txtphoto"
+            android:layout_alignLeft="@+id/imgclient"
+            android:layout_marginLeft="14dp"
+            android:text="Add Client"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txtremind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtphoto"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="14dp"
+            android:text="Reminder"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/imgremind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtremind"
+            android:layout_alignLeft="@+id/imgphoto"
+            android:layout_marginBottom="18dp"
+            android:src="@drawable/remind" />
+
+        <ImageButton
+            android:id="@+id/imgfeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imgclient"
+            android:layout_alignTop="@+id/imgremind"
+            android:src="@drawable/feeds" />
+
+        <TextView
+            android:id="@+id/txtfeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/imgfeed"
+            android:layout_below="@+id/imgremind"
+            android:text="Property News"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageButton
+            android:id="@+id/imgcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/category" />
+
+        <TextView
+            android:id="@+id/txtcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgcategory"
+            android:layout_centerHorizontal="true"
+            android:text="Category"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </RelativeLayout>
+
+</LinearLayout>

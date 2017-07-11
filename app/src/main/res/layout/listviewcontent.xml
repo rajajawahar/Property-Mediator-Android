@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="110dp"
+     	
+     >
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Name"
+        	android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/txtphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtname"
+        android:layout_below="@+id/txtname"
+        android:layout_marginTop="25dp"
+        android:text="@string/Phone" 
+        	android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/txtviewname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtname"
+        android:layout_alignBottom="@+id/txtname"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@+id/txtphone"
+       	android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/txtviewphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtphone"
+        android:layout_alignBottom="@+id/txtphone"
+        android:layout_alignLeft="@+id/txtviewname"
+        	android:textColor="#ffffff"/>
+
+</RelativeLayout>
