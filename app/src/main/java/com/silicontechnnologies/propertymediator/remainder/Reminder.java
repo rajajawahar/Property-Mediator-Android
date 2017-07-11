@@ -1,4 +1,4 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.remainder;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+
+import com.silicontechnnologies.propertymediator.R;
 
 public class Reminder extends Activity implements
 		OnClickListener {

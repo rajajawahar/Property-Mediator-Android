@@ -14,6 +14,12 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.silicontechnnologies.propertymediator.category.House;
+import com.silicontechnnologies.propertymediator.client.Client;
+import com.silicontechnnologies.propertymediator.photo.Customer;
+import com.silicontechnnologies.propertymediator.remainder.Reminder;
+import com.silicontechnnologies.propertymediator.utils.ConnectionDetector;
+
 public class PropertyMediatorMainActivity extends Activity {
 
 	

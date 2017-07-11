@@ -1,5 +1,5 @@
 
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.remainder;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -22,7 +22,9 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-public class NotifyList extends Activity {
+import com.silicontechnnologies.propertymediator.R;
+
+public class ReminderEditActivity extends Activity {
 
 	// 
 	// Dialog Constants
@@ -41,7 +43,7 @@ public class NotifyList extends Activity {
     private EditText mBodyText;
     private Button mDateButton;
     private Button mTimeButton;
-    private Button mConfirmButton,mdelete;
+    private Button mConfirmButton;
     private Long mRowId;
     private RemindersDbAdapter mDbHelper;
     private Calendar mCalendar;
@@ -53,8 +55,8 @@ public class NotifyList extends Activity {
         
         mDbHelper = new RemindersDbAdapter(this);
         
-        setContentView(R.layout.notifylist);
-        
+        setContentView(R.layout.reminder_edit);
+        setTitle("Reminder Set");
         mCalendar = Calendar.getInstance(); 
         mTitleText = (EditText) findViewById(R.id.title);
         mBodyText = (EditText) findViewById(R.id.body);
@@ -62,7 +64,7 @@ public class NotifyList extends Activity {
         mTimeButton = (Button) findViewById(R.id.reminder_time);
       
         mConfirmButton = (Button) findViewById(R.id.confirm);
-        mdelete = (Button)findViewById(R.id.btndelete);
+        
         mRowId = savedInstanceState != null ? savedInstanceState.getLong(RemindersDbAdapter.KEY_ROWID) 
                 							: null;
        
@@ -107,7 +109,7 @@ public class NotifyList extends Activity {
  	private DatePickerDialog showDatePicker() {
 		
 		
-		DatePickerDialog datePicker = new DatePickerDialog(NotifyList.this, new DatePickerDialog.OnDateSetListener() {
+		DatePickerDialog datePicker = new DatePickerDialog(ReminderEditActivity.this, new DatePickerDialog.OnDateSetListener() {
 			
 			@Override
 			public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
@@ -156,22 +158,21 @@ public class NotifyList extends Activity {
 		
 		mConfirmButton.setOnClickListener(new View.OnClickListener() {
         	public void onClick(View view) {
+        		if(mTitleText.getText().toString().equals("")||mBodyText.getText().toString().equals(""))
+        		{
+        			Toast.makeText(getApplicationContext(), "Enter Hint/Message",Toast.LENGTH_SHORT).show();
+        		}
+        		else
+        		{
         		saveState(); 
         		setResult(RESULT_OK);
-        	    Toast.makeText(NotifyList.this, getString(R.string.task_saved_message), Toast.LENGTH_SHORT).show();
+        	    Toast.makeText(ReminderEditActivity.this, getString(R.string.task_saved_message), Toast.LENGTH_SHORT).show();
         	    finish(); 
+        		}
         	}
           
         });
-		mdelete.setOnClickListener(new View.OnClickListener() {
-        	public void onClick(View view) 
-        	{	
-        		msg = mBodyText.getText().toString();
-        		mDbHelper.deleteReminder1(msg);
-        	    finish(); 
-        	}
-          
-        });
+		
 		
 		  updateDateButtonText(); 
 	      updateTimeButtonText();

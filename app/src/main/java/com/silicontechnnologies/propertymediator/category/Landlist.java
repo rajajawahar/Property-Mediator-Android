@@ -1,4 +1,4 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.category;
 
 import java.io.File;
 
@@ -14,6 +14,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.silicontechnnologies.propertymediator.R;
+import com.silicontechnnologies.propertymediator.database.ImageDatabase;
 
 public class Landlist extends Activity {
 

@@ -1,7 +1,4 @@
-package com.silicontechnnologies.propertymediator;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+package com.silicontechnnologies.propertymediator.category;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -17,6 +14,12 @@ import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Toast;
+
+import com.silicontechnnologies.propertymediator.database.ImageDatabase;
+import com.silicontechnnologies.propertymediator.R;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class House extends Activity {
 	ListView list, list1;

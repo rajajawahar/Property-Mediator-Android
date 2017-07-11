@@ -1,7 +1,4 @@
-package com.silicontechnnologies.propertymediator;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
+package com.silicontechnnologies.propertymediator.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -9,6 +6,13 @@ import android.content.Intent;
 import android.content.pm.ComponentInfo;
 import android.database.Cursor;
 import android.util.Log;
+
+import com.silicontechnnologies.propertymediator.remainder.ReminderEditActivity;
+import com.silicontechnnologies.propertymediator.remainder.ReminderManager;
+import com.silicontechnnologies.propertymediator.remainder.RemindersDbAdapter;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class OnBootReceiver extends BroadcastReceiver {
 	
@@ -40,7 +44,7 @@ public class OnBootReceiver extends BroadcastReceiver {
 				String dateTime = cursor.getString(dateTimeColumnIndex); 
 
 				Calendar cal = Calendar.getInstance();
-				SimpleDateFormat format = new SimpleDateFormat(ReminderEditActivity.DATE_TIME_FORMAT); 
+				SimpleDateFormat format = new SimpleDateFormat(ReminderEditActivity.DATE_TIME_FORMAT);
 				
 				try {
 					java.util.Date date = format.parse(dateTime);

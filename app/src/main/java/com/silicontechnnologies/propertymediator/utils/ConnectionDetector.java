@@ -1,4 +1,4 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

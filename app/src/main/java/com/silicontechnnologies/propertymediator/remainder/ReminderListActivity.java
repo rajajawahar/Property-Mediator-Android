@@ -1,5 +1,5 @@
 
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.remainder;
 
 
 
@@ -13,6 +13,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
+
+import com.silicontechnnologies.propertymediator.R;
+import com.silicontechnnologies.propertymediator.TaskPreferences;
 
 public class ReminderListActivity extends ListActivity {
     private static final int ACTIVITY_CREATE=0;
@@ -85,7 +88,7 @@ public class ReminderListActivity extends ListActivity {
             createReminder();
             return true; 
         case R.id.menu_settings: 
-        	Intent i = new Intent(this, TaskPreferences.class); 
+        	Intent i = new Intent(this, TaskPreferences.class);
         	startActivity(i); 
             return true;
         

@@ -1,5 +1,5 @@
 
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.client;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.silicontechnnologies.propertymediator.R;
+import com.silicontechnnologies.propertymediator.client.Client;
+import com.silicontechnnologies.propertymediator.database.DBAdapter;
 
 public class DeleteDetails extends Activity
 {

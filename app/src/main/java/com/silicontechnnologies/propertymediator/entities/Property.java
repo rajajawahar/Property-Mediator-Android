@@ -1,4 +1,4 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.entities;
 
 public class Property {
 	String Name = null;

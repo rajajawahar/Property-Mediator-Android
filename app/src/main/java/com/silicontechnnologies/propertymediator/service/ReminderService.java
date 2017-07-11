@@ -1,10 +1,14 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.service;
 
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.util.Log;
+
+import com.silicontechnnologies.propertymediator.remainder.NotifyList;
+import com.silicontechnnologies.propertymediator.R;
+import com.silicontechnnologies.propertymediator.remainder.RemindersDbAdapter;
 
 public class ReminderService extends WakeReminderIntentService {
 

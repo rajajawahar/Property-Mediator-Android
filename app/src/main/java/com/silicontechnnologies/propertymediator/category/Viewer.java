@@ -1,14 +1,15 @@
-package com.silicontechnnologies.propertymediator;
-
-import java.io.File;
+package com.silicontechnnologies.propertymediator.category;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.silicontechnnologies.propertymediator.R;
+
+import java.io.File;
 
 public class Viewer extends Activity {
 

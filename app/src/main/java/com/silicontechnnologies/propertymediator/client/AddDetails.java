@@ -1,4 +1,4 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.client;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,6 +7,9 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.silicontechnnologies.propertymediator.database.DBAdapter;
+import com.silicontechnnologies.propertymediator.R;
 
 
 public class AddDetails extends Activity

@@ -1,5 +1,5 @@
 
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.remainder;
 
 import android.content.ContentValues;
 import android.content.Context;

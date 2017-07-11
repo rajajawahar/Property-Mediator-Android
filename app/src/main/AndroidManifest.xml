@@ -30,55 +30,55 @@
             android:name=".PropertyMediatorMainActivity"
             android:label="@string/app_name"></activity>
         <activity
-            android:name=".Client"
+            android:name=".client.Client"
             android:label="@string/app_name"></activity>
         <activity
-            android:name=".AddDetails"
+            android:name=".client.AddDetails"
             android:label="@string/app_name"></activity>
         <activity
             android:name=".view"
             android:label="@string/app_name"></activity>
         <activity
-            android:name=".DeleteDetails"
+            android:name=".client.DeleteDetails"
             android:label="@string/app_name"></activity>
 
 
         <activity
-            android:name=".Reminder"
+            android:name=".remainder.Reminder"
             android:label="@string/app_name" />
-        <activity android:name=".ReminderListActivity" />
-        <activity android:name=".NotifyList" />
+        <activity android:name=".remainder.ReminderListActivity" />
+        <activity android:name=".remainder.NotifyList" />
         <activity
             android:name=".TaskPreferences"
             android:label="@string/app_name" />
 
-        <receiver android:name=".OnBootReceiver">
+        <receiver android:name=".receiver.OnBootReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-        <receiver android:name=".OnAlarmReceiver" />
+        <receiver android:name=".receiver.OnAlarmReceiver" />
 
-        <service android:name=".ReminderService" />
+        <service android:name=".service.ReminderService" />
 
         <activity
-            android:name=".ReminderEditActivity"
+            android:name=".remainder.ReminderEditActivity"
             android:label="@string/edit_reminder_title" />
 
         <activity
             android:name=".PropertyNews"
             android:label="@string/app_name" />
         <activity
-            android:name=".Customer"
+            android:name=".photo.Customer"
             android:label="@string/app_name"></activity>
         <activity
-            android:name=".House"
+            android:name=".category.House"
             android:label="@string/app_name"></activity>
         <activity
-            android:name=".Landlist"
+            android:name=".category.Landlist"
             android:label="@string/app_name"></activity>
         <activity
-            android:name=".Viewer"
+            android:name=".category.Viewer"
             android:label="@string/app_name"></activity>
         <activity
             android:name=".Checkinternet"

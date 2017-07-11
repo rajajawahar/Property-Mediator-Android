@@ -1,4 +1,4 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.service;
 
 import android.app.IntentService;
 import android.content.Context;

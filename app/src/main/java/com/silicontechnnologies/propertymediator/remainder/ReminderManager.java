@@ -1,4 +1,4 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.remainder;
 
 import java.util.Calendar;
 
@@ -6,6 +6,8 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+
+import com.silicontechnnologies.propertymediator.receiver.OnAlarmReceiver;
 
 public class ReminderManager {
 

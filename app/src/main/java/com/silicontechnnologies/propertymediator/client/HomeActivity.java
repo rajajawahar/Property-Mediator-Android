@@ -1,7 +1,9 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.client;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.silicontechnnologies.propertymediator.R;
 
 public class HomeActivity extends AppCompatActivity {
 

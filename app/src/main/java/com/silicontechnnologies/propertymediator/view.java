@@ -10,6 +10,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
+import com.silicontechnnologies.propertymediator.client.DeleteDetails;
+import com.silicontechnnologies.propertymediator.database.DBAdapter;
+
 public class view extends Activity implements OnItemClickListener
 {
 	ListView list;

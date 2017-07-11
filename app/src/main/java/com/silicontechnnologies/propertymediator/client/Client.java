@@ -1,4 +1,4 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.client;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+
+import com.silicontechnnologies.propertymediator.R;
 
 public class Client extends Activity
 {
@@ -37,7 +39,7 @@ public class Client extends Activity
 			@Override
 			public void onClick(View v) 
 			{
-				Intent view = new Intent(getApplicationContext(),view.class);
+				Intent view = new Intent(getApplicationContext(), com.silicontechnnologies.propertymediator.view.class);
 				startActivity(view);
 				
 			}

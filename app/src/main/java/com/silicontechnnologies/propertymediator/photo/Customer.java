@@ -1,11 +1,5 @@
-package com.silicontechnnologies.propertymediator;
+package com.silicontechnnologies.propertymediator.photo;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -14,7 +8,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Environment;
-import android.text.format.DateFormat;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -27,6 +20,17 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.silicontechnnologies.propertymediator.database.ImageDatabase;
+import com.silicontechnnologies.propertymediator.PropertyMediatorMainActivity;
+import com.silicontechnnologies.propertymediator.R;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class Customer extends Activity {
 

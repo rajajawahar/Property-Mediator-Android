@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.silicontechnnologies.propertymediator.utils.ConnectionDetector;
+
 public class Checkinternet extends Activity {
 
 	// flag for Internet connection status
