@@ -2,13 +2,12 @@
     android:id="@+id/scrollView1"
     android:layout_width="wrap_content"
     android:layout_height="fill_parent"
-     	android:background="@drawable/background1"
-   >
+    android:background="@drawable/background1">
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" 
-     
+        android:layout_height="wrap_content"
+
         >
 
         <ImageView
@@ -18,8 +17,8 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:src="@android:drawable/ic_menu_camera"
-            
- />
+
+            />
 
         <TextView
             android:id="@+id/phone"
@@ -30,7 +29,7 @@
             android:layout_below="@+id/spinner1"
             android:text="@string/ph"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            	android:textColor="#ffffff" />
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/email"
@@ -40,8 +39,8 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/editText2"
             android:text="@string/mail"
-            android:textAppearance="?android:attr/textAppearanceMedium" 
-            	android:textColor="#ffffff"/>
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/address"
@@ -52,7 +51,7 @@
             android:layout_below="@+id/editText3"
             android:text="@string/addr"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            	android:textColor="#ffffff"/>
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/detail"
@@ -63,7 +62,7 @@
             android:layout_below="@+id/editText4"
             android:text="@string/full"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            	android:textColor="#ffffff"/>
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/Name"
@@ -73,7 +72,7 @@
             android:layout_below="@+id/imageView1"
             android:text="@string/Own"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            	android:textColor="#ffffff" />
+            android:textColor="#ffffff" />
 
         <TextView
             android:id="@+id/Property"
@@ -84,15 +83,14 @@
             android:layout_below="@+id/editText1"
             android:text="@string/Prop"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            	android:textColor="#ffffff" />
+            android:textColor="#ffffff" />
 
         <Spinner
             android:id="@+id/spinner1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/Property"
-           />
+            android:layout_below="@+id/Property" />
 
         <EditText
             android:id="@+id/editText1"
@@ -104,7 +102,7 @@
             android:ems="10"
             android:hint="@string/name"
             android:inputType="textPersonName"
-            	android:textColor="#ffffff" />
+            android:textColor="#ffffff" />
 
         <EditText
             android:id="@+id/editText2"
@@ -115,8 +113,8 @@
             android:layout_below="@+id/phone"
             android:ems="10"
             android:hint="@string/no"
-            android:inputType="phone" 
-            	android:textColor="#ffffff">
+            android:inputType="phone"
+            android:textColor="#ffffff">
 
             <requestFocus />
         </EditText>
@@ -164,8 +162,10 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_below="@+id/editText5"
-            android:text="@string/save" 
-            android:textColor="#ffffff"/>
+            android:background="@color/colorPrimary"
+            android:text="@string/save"
+
+            android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/cancel"
@@ -175,6 +175,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentRight="true"
             android:layout_below="@+id/save"
+            android:background="@color/colorPrimary"
             android:text="@string/cancel"
             android:textColor="#ffffff" />
     </RelativeLayout>

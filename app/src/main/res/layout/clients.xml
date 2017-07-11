@@ -14,6 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="98dp"
+        android:background="@color/colorPrimary"
         android:text="@string/Add"
         android:textColor="#ffffff" />
 
@@ -24,7 +25,9 @@
         android:layout_alignLeft="@+id/add"
         android:layout_below="@+id/add"
         android:layout_marginTop="87dp"
+        android:background="@color/colorPrimary"
         android:text="@string/View"
+
         android:textColor="#ffffff" />
 
 </RelativeLayout>

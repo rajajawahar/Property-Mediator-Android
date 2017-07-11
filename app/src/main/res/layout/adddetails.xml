@@ -2,117 +2,120 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-  android:background="@drawable/background1"
-    >
+    android:background="@drawable/background1"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/lblname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-   	android:textColor="#ffffff"
-        android:text="@string/Name" />
-   
+        android:text="@string/Name"
+        android:textColor="#ffffff" />
+
 
     <EditText
         android:id="@+id/txtname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        	android:textColor="#ffffff"
+        android:hint="Enter Client Name"
         android:inputType="text"
-        android:hint="Enter Client Name"/>
+        android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/lblnotes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Notes" 
-        	android:textColor="#ffffff"
-        />
+        android:text="@string/Notes"
+        android:textColor="#ffffff" />
 
     <EditText
         android:id="@+id/txtnotes"
         android:layout_width="match_parent"
         android:layout_height="86dp"
         android:ems="10"
-        	android:textColor="#ffffff"
-        android:inputType="textMultiLine"
         android:hint="Enter Notes"
-        />
-     <TextView
+        android:inputType="textMultiLine"
+        android:textColor="#ffffff" />
+
+    <TextView
         android:id="@+id/lblpan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/PAN" 
-        	android:textColor="#ffffff"/>
-     <EditText
+        android:text="@string/PAN"
+        android:textColor="#ffffff" />
+
+    <EditText
         android:id="@+id/txtpan"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Enter Client's PAN Number"
         android:inputType="text"
-        	android:textColor="#ffffff"
-        	android:hint="Enter Client's PAN Number"/>
+        android:textColor="#ffffff" />
 
-     <TextView
+    <TextView
         android:id="@+id/lblphone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Phone" 
-        	android:textColor="#ffffff"
-        	/>
+        android:text="@string/Phone"
+        android:textColor="#ffffff" />
 
     <EditText
         android:id="@+id/txtphone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Enter Contact Number"
         android:inputType="phone"
-        	android:textColor="#ffffff"
-        	android:hint="Enter Contact Number"/>
+        android:textColor="#ffffff" />
+
     <TextView
         android:id="@+id/lblemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Email" 
-        	android:textColor="#ffffff"/>
+        android:text="@string/Email"
+        android:textColor="#ffffff" />
 
     <EditText
         android:id="@+id/txtemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Enter Email"
         android:inputType="textEmailAddress"
-        	android:textColor="#ffffff"
-        	android:hint="Enter Email"/>
+        android:textColor="#ffffff" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <Button
             android:id="@+id/btncancel"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/btnsave"
             android:layout_alignBottom="@+id/btnsave"
             android:layout_alignParentRight="true"
             android:layout_marginRight="62dp"
+            android:background="@color/colorPrimary"
             android:text="@string/Cancel"
+            android:textAllCaps="false"
             android:textColor="#ffffff" />
 
         <Button
             android:id="@+id/btnsave"
             style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginLeft="39dp"
             android:layout_marginTop="61dp"
+            android:background="@color/colorPrimary"
             android:text="@string/Save"
+            android:textAllCaps="false"
             android:textColor="#ffffff" />
 
     </RelativeLayout>
